@@ -1,6 +1,7 @@
 resource "kubernetes_deployment_v1" "konoha-deploy" {
   metadata {
     name = "konoha"
+    namespace = "konoha"
   }
 
   spec {
