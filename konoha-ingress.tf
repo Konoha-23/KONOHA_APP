@@ -24,7 +24,7 @@ resource "kubernetes_ingress_v1" "konoha-ingress" {
             service {
               name = "konoha-svc"
               port {
-                number = 80
+                number = 8080
               }
             }
           }
