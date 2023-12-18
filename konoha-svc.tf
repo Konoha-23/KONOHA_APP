@@ -9,7 +9,7 @@ resource "kubernetes_service_v1" "konoha-svc" {
     }
     port {
       port        = 80
-      target_port = 80
+      target_port = 8080
     }
 
     type = "ClusterIP"
