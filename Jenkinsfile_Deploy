@@ -12,7 +12,7 @@ pipeline{
         //}
         stage('Create konoha ClusterIssuer'){
             steps{
-              sh "echo 'Create Cluster Issuer for Mattermost'"
+              sh "echo 'Create Cluster Issuer for Konoha'"
               sh "kubectl apply -f konoha-issuer.yml"   
             }
         }
