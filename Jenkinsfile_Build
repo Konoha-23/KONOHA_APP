@@ -10,7 +10,7 @@ pipeline{
         //    steps{
         //        sh "echo cloning code"
         //        sh "echo clone code complete"
-        //        git 'https://github.com/Ohubabs/tesla-app.git'
+        //        git 'https://github.com/Ohubabs/KONOHA_APP.git'
         //    }
         //}
         stage ('Build Webapp'){
