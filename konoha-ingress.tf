@@ -40,7 +40,7 @@ resource "kubernetes_ingress_v1" "konoha" {
   wait_for_load_balancer = true
   metadata {
     name = "konoha"
-    namespace = "default"
+    namespace = "konoha"
     annotations = {
         "alb.ingress.kubernetes.io/load-balancer-name" = "konoha"
         "alb.ingress.kubernetes.io/scheme"             = "internet-facing"
