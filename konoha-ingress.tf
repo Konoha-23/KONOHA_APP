@@ -16,7 +16,7 @@ resource "kubernetes_ingress_v1" "konoha-ingress" {
       hosts = ["konoha.devopsnetwork.net"] 
     }
     rule {
-      host = konoha.devopsnetwork.net  
+      host = "konoha.devopsnetwork.net"  
       http {
         path {
           path = "/"
