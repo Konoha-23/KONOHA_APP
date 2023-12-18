@@ -29,7 +29,7 @@ pipeline{
         stage('Push to DockerHub'){
             steps{
               sh "echo 'Push Image'"
-              sh 'docker push princebabs/konoha:v2'
+              sh 'docker push princebabs/konoha'
                 
             }
         }
