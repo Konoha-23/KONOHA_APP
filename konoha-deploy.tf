@@ -33,7 +33,7 @@ resource "kubernetes_deployment_v1" "konoha-deploy" {
           name  = "konoha-pod"
 
           port {
-            container_port = 80
+            container_port = 8080
           }
 
           resources {
