@@ -12,6 +12,6 @@ resource "kubernetes_service_v1" "konoha-svc" {
       target_port = 80
     }
 
-    type = "NodePort"
+    type = "ClusterIP"
   }
 }
