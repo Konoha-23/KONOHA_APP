@@ -45,7 +45,7 @@ resource "kubernetes_ingress_v1" "konoha" {
         "alb.ingress.kubernetes.io/load-balancer-name" = "konoha"
         "alb.ingress.kubernetes.io/scheme"             = "internet-facing"
         "alb.ingress.kubernetes.io/target-type"        = "ip"                                       
-        "alb.ingress.kubernetes.io/certificate-arn" = ""
+        "alb.ingress.kubernetes.io/certificate-arn" = "arn:aws:acm:us-west-2:083772204804:certificate/2318624b-af04-4da9-984f-99a68ba155cc"
   }
   }
   spec {
