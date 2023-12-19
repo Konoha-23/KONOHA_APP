@@ -3,20 +3,20 @@
 resource "kubernetes_ingress_v1" "konoha-ingress" {
   wait_for_load_balancer = true
   metadata {
-    name = "konoha"
-    namespace = "konoha"
+    name = "tesla"
+    namespace = "tesla"
     annotations = {
-        "cert-manager.io/cluster-issuer" = "konoha-issuer"
+        "cert-manager.io/cluster-issuer" = "tesla-issuer"
   }
   }
   spec {
     ingress_class_name = "nginx"
     tls {
-      secret_name = "konoha-secret"
-      hosts = ["konoha.devopsnetwork.net"] 
+      secret_name = "tesla-secret"
+      hosts = ["tesla.devopsnetwork.net"] 
     }
     rule {
-      host = "konoha.devopsnetwork.net"  
+      host = "tesla.devopsnetwork.net"  
       http {
         path {
           path = "/"
