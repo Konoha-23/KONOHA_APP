@@ -109,7 +109,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>tesla</finalName>
+		<finalName>konoha</finalName>
 		
 		<plugins>
 			<plugin>
