@@ -4,7 +4,7 @@ resource "kubernetes_ingress_v1" "konoha-ingress" {
   wait_for_load_balancer = true
   metadata {
     name = "tesla"
-    namespace = "tesla"
+    namespace = "konoha"
     annotations = {
         "cert-manager.io/cluster-issuer" = "tesla-issuer"
   }
