@@ -6,17 +6,17 @@ resource "kubernetes_ingress_v1" "konoha-ingress" {
     name = "tesla"
     namespace = "konoha"
     annotations = {
-        "cert-manager.io/cluster-issuer" = "tesla-issuer"
+        "cert-manager.io/cluster-issuer" = "konoha-issuer"
   }
   }
   spec {
     ingress_class_name = "nginx"
     tls {
       secret_name = "tesla-secret"
-      hosts = ["tesla.devopsnetwork.net"] 
+      hosts = ["landmark.devopsnetwork.net"] 
     }
     rule {
-      host = "tesla.devopsnetwork.net"  
+      host = "landmark.devopsnetwork.net"  
       http {
         path {
           path = "/"
