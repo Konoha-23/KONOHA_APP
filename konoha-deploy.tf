@@ -29,7 +29,7 @@ resource "kubernetes_deployment_v1" "konoha-deploy" {
 
       spec {
         container {
-          image = "princebabs/konoha:8"
+          image = "princebabs/konoha"
           name  = "konoha-pod"
 
           port {
