@@ -10,12 +10,6 @@ pipeline{
         //        git 'https://github.com/Ohubabs/KONOHA_APP.git'
         //    }
         //}
-        stage('Create konoha ClusterIssuer'){
-            steps{
-              sh "echo 'Create Cluster Issuer for Konoha'"
-              sh "kubectl apply -f konoha-issuer.yml"   
-            }
-        }
         stage('Initialize Terraform'){
             steps{
                 sh "echo 'Deploy Tesla To Cluster'"
