@@ -3,12 +3,6 @@ pipeline{
         label 'terra'
   }
     stages{
-        stage('Delete konoha ClusterIssuer'){
-            steps{
-              sh "echo 'Create Cluster Issuer for Konoha'"
-              sh "kubectl delete -f konoha-issuer.yml"   
-            }
-        }
         stage('Destroy Konoha Web Server Today'){
             steps{
                 sh "echo 'Deploy Tesla To Cluster'"
