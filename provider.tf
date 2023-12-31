@@ -10,6 +10,10 @@ terraform {
       source  = "hashicorp/kubernetes"
       version = ">= 2.10"
     }
+    helm = {
+      source  = "hashicorp/helm"
+      version = ">= 2.4.1"
+    }
   }
 }
 
@@ -17,6 +21,8 @@ provider "aws" {
     region = "us-west-2"
 }
 
-provider "kubernetes" {
+provider "helm" {
+  kubernetes {
     config_path = "/home/terra/.kube/config"
   }
+}
