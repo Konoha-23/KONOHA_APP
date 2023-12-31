@@ -1,6 +1,6 @@
 resource "kubernetes_service_v1" "konoha-svc" {
   metadata {
-    name = "konoha-svc"
+    name = "konoha"
     namespace = "konoha"
   }
   spec {
