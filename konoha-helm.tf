@@ -1,6 +1,6 @@
-#resource "helm_release" "konoha-app1" {
-#  name       = "konoha1"
-#  namespace = "default"
+#resource "helm_release" "konoha-app" {
+#  name       = "konoha"
+#  namespace = "konoha"
 #  chart      = "konoha"
 #  repository = "https://konoha-23.github.io/landmark/"
 #  
